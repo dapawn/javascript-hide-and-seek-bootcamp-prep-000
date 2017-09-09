@@ -23,7 +23,7 @@ function increaseRankBy (n) {
 
 function deepestChild() {
   let current = document.getElementById("grand-node").children;
-  return current;
+  return current[0];
   //console.log(current.toString())
   let next = []
 
