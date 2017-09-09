@@ -1,7 +1,7 @@
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
-JSDOM.fromFile("./index.html", options).then(dom => {console.log(dom.serialize())});
+JSDOM.fromFile("./index.html").then(dom => {console.log(dom.serialize())});
 
 function getFirstSelector(selector) {
   return document.querySelector(selector)
